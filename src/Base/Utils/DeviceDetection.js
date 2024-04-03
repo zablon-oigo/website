@@ -42,7 +42,7 @@ var launchScribbleLab = function() {
  * @name openScribbleLab
  * @memberof window
  * @returns {void}
- */
+ */ 
 export var openScribbleLab = function() {
     launchScribbleLab();
 };
