@@ -1,65 +1,50 @@
-import {useState,React} from 'react'
+import {React} from 'react'
 import logo from '../assets/logo.png'
 import Button from '../Layout/Button'
-import { CiMenuFries } from "react-icons/ci";
-import { RxCross1 } from "react-icons/rx";
-function Navbar() {
-    const[menu,setMenu]=useState(false)
-    const toggleMenu=()=>{
-        setMenu(!menu)
-    }
-    const closeMenu=()=>{
-        setMenu(false)
-    }
 
+function Navbar() {
   return (
     <>
-    <header className="relative w-full">
-        <div className="bg-secondary">
-            <p className="p-3 text-sm font-light text-center text-white first-letter:capitalize lg:text-xl ">
-                currently in development, checkout the roadmap
+    <header className="">
+    <nav className="">
+        <div className="bg-[#ED8335]">
+            <p className="p-2 font-light text-center text-white text-md first-letter:capitalize ">
+                currently in development, checkout the <a href="" className="underline hover:text-[#E2DFD2] duration-300">roadmap</a>
             </p>
         </div>
-        <nav className="flex items-center justify-between w-full px-10 py-4 border-b-2 border-black">
-            <div className="">
-                <a href="" className="inline-flex items-center gap-3">
+         <div className=" flex  items-center justify-between w-full px-3 border-b border-[#111717]">
+         <a href="" className="inline-flex items-center gap-3 cursor-pointer">
                     <img src={logo} alt="" className="w-[60px] h-[60px] object-cover object-center" />
-                   <span className="text-xl font-bold capitalize">
+                   <span className="text-xl font-bold capitalize duration-300 hover:text-secondary">
                    scribbleLabApp
                    </span>
-                </a>
-            </div>
-            <div className="items-center hidden lg:flex gap-x-6">
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">products</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">learn</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">marketplace</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">account</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">developer</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">support</a>
-            <div className="hidden lg:block">
+          </a>
+            <div className="flex items-center gap-x-6">
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">products</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">learn</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">marketplace</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">account</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">developer</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-[#ED8335]">support</a>
                 <Button title="Download"/>
             </div>
+         </div>
+    </nav>
+    <div className="flex items-center justify-between px-4 py-1 lg:px-10">
+            <div className="">
+                <a href="" className="text-xs font-semibold text-gray-700 capitalize duration-700 lg:text-2xl hover:text-secondary">support</a>
             </div>
-            
-            <button className="block lg:hidden" onClick={toggleMenu}>
-            {
-             menu ? <RxCross1  className='text-3xl'/> : <CiMenuFries className='text-3xl' />
-            }
-            </button>
-        </nav>
-        <section className={`${menu ? 'translate-x-0':'translate-x-full'} py-20 px-6  min-h-screen absolute w-full top-24 duration-300 right-0 bg-white`}>
-        <div className="flex flex-col items-center gap-y-10">
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">products</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">learn</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">marketplace</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">account</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">developer</a>
-                <a href="" className="text-lg font-medium text-gray-700 capitalize duration-700 hover:text-gray">support</a>
+            <div className="flex items-center lg:gap-x-6 gap-x-2">
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">overview</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">articles</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">help guide</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">agreements</a>
+                <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">guidelines</a>
+                <div className="mx-2">
+                <button className="px-4 py-3 capitalize border-2 border-[#111717] rounded-full lg:font-semibold lg:px-4 text-slate-900 hover:bg-secondary hover:border-white hover:text-white duration-700 transition-all">contact us</button>
             </div>
-            <div className="flex justify-center my-10">
-                <Button title="Download"/>
             </div>
-        </section>
+        </div>
     </header>
     </>
   )
