@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
     <header className="">
-    <nav className="">
+    <nav className="py-2">
         <div className="bg-[#ED8335]">
             <p className="p-2 font-light text-center text-white text-md first-letter:capitalize ">
                 currently in development,<a href="" className="underline hover:text-[#E2DFD2] duration-300 underline-offset-2">checkout the roadmap</a>
@@ -15,7 +15,7 @@ function Navbar() {
          <div className=" flex  items-center justify-between w-full px-3 border-b border-[#111717]">
          <a href="" className="inline-flex items-center gap-3 cursor-pointer">
                     <img src={logo} alt="" className="w-[60px] h-[60px] object-cover object-center" />
-                   <span className="text-xl font-bold capitalize duration-300 hover:text-secondary">
+                   <span className="text-2xl font-bold capitalize duration-300 hover:text-secondary">
                    scribbleLabApp
                    </span>
           </a>
@@ -41,7 +41,7 @@ function Navbar() {
                 <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">agreements</a>
                 <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">guidelines</a>
                 <div className="mx-2">
-                <button className="px-4 py-3 capitalize border-2 border-[#111717] rounded-full lg:font-semibold lg:px-4 text-slate-900 hover:bg-secondary hover:border-white hover:text-white duration-700 transition-all">contact us</button>
+                <button className="px-4 py-2 capitalize border-2 border-[#111717] rounded-full lg:font-semibold lg:px-4 text-slate-900 hover:bg-secondary hover:border-white hover:text-white duration-700 transition-all">contact us</button>
             </div>
             </div>
         </div>
