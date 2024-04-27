@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="">
         <div className="bg-[#ED8335]">
             <p className="p-2 font-light text-center text-white text-md first-letter:capitalize ">
-                currently in development, checkout the <a href="" className="underline hover:text-[#E2DFD2] duration-300">roadmap</a>
+                currently in development,<a href="" className="underline hover:text-[#E2DFD2] duration-300 underline-offset-2">checkout the roadmap</a>
             </p>
         </div>
          <div className=" flex  items-center justify-between w-full px-3 border-b border-[#111717]">
