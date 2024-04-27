@@ -41,7 +41,7 @@ function Navbar() {
                 <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">agreements</a>
                 <a href="" className="font-medium text-[#111717] capitalize duration-700 text-md hover:text-secondary">guidelines</a>
                 <div className="mx-2">
-                <button className="px-4 py-2 capitalize border-2 border-[#111717] rounded-full lg:font-semibold lg:px-4 text-slate-900 hover:bg-secondary hover:border-white hover:text-white duration-700 transition-all">contact us</button>
+                <button className="px-4 py-2 capitalize border-2 border-[#111717] rounded-full lg:font-semibold lg:px-4 text-slate-900 hover:bg-white hover:border-secondary hover:text-secondary duration-700 transition-all">contact us</button>
             </div>
             </div>
         </div>
